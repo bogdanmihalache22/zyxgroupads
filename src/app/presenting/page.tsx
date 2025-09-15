@@ -1,215 +1,26 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import PresentationLargeCard from "@/components/PresentationLargeCard";
 
 export default function PresentingPage() {
   return (
     <>
       <Header />
       
-      <main className="flex-1 w-full py-10">
-        <h1 className="text-3xl font-bold mb-8">Presenting</h1>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <Card>
-            <CardHeader>
-              <CardTitle>Card One</CardTitle>
-              <CardDescription>First example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the first card.</p>
-            </CardContent>
-          </Card>
+      <PresentationLargeCard
+        title="Messaging Flex Frame"
+        description="The Messaging unit is an excellent canvas for image‑led storytelling. A fast-loading, performant experience with one compelling image, headline, message and CTA."
+      />
 
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Two</CardTitle>
-              <CardDescription>Second example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the second card.</p>
-            </CardContent>
-          </Card>
+      <PresentationLargeCard
+        title="Flex Frame – 2 Column"
+        description="A two‑column layout designed for clarity: prominent visual on the right, concise copy on the left, optimized across devices."
+      />
 
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Three</CardTitle>
-              <CardDescription>Third example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the third card.</p>
-            </CardContent>
-          </Card><Card>
-            <CardHeader>
-              <CardTitle>Card One</CardTitle>
-              <CardDescription>First example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the first card.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Two</CardTitle>
-              <CardDescription>Second example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the second card.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Three</CardTitle>
-              <CardDescription>Third example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the third card.</p>
-            </CardContent>
-          </Card><Card>
-            <CardHeader>
-              <CardTitle>Card One</CardTitle>
-              <CardDescription>First example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the first card.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Two</CardTitle>
-              <CardDescription>Second example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the second card.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Three</CardTitle>
-              <CardDescription>Third example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the third card.</p>
-            </CardContent>
-          </Card><Card>
-            <CardHeader>
-              <CardTitle>Card One</CardTitle>
-              <CardDescription>First example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the first card.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Two</CardTitle>
-              <CardDescription>Second example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the second card.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Three</CardTitle>
-              <CardDescription>Third example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the third card.</p>
-            </CardContent>
-          </Card><Card>
-            <CardHeader>
-              <CardTitle>Card One</CardTitle>
-              <CardDescription>First example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the first card.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Two</CardTitle>
-              <CardDescription>Second example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the second card.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Three</CardTitle>
-              <CardDescription>Third example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the third card.</p>
-            </CardContent>
-          </Card><Card>
-            <CardHeader>
-              <CardTitle>Card One</CardTitle>
-              <CardDescription>First example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the first card.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Two</CardTitle>
-              <CardDescription>Second example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the second card.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Three</CardTitle>
-              <CardDescription>Third example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the third card.</p>
-            </CardContent>
-          </Card><Card>
-            <CardHeader>
-              <CardTitle>Card One</CardTitle>
-              <CardDescription>First example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the first card.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Two</CardTitle>
-              <CardDescription>Second example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the second card.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Three</CardTitle>
-              <CardDescription>Third example card using shadcn/ui</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Content for the third card.</p>
-            </CardContent>
-          </Card>
-        </div>
-      </main>
-
+      <PresentationLargeCard
+        title="Flex Frame – Campaign Highlight"
+        description="Showcase your key creative with a responsive canvas that balances narrative and impact, driving attention and action."
+      />
       <Footer />
     </>
   );
