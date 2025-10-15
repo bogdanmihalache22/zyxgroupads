@@ -13,12 +13,12 @@ export default function Header() {
             <Link href="/" className="text-sm font-medium hover:text-primary transition-colors">
               Home
             </Link>
-            <a href="/presenting" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link href="/presenting/" className="text-sm font-medium hover:text-primary transition-colors">
               Presenting
-            </a>
-            <a href="/contact" className="text-sm font-medium hover:text-primary transition-colors">
+            </Link> 
+            <Link href="/contact/" className="text-sm font-medium hover:text-primary transition-colors">
               Contact
-            </a>
+            </Link>
           </div>
           
         </nav>
