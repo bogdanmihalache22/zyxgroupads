@@ -44,12 +44,17 @@ function AccordionRows() {
   const [openSpecs, setOpenSpecs] = useState(false);
   const [openBreakpoints, setOpenBreakpoints] = useState(false);
 
+  const handleAccordionClick = (e: React.MouseEvent, toggleFn: () => void) => {
+    e.stopPropagation();
+    toggleFn();
+  };
+
   return (
     <div className="mt-6">
       <button
         type="button"
         className="w-full flex items-center justify-between py-2"
-        onClick={() => setOpenSpecs((v) => !v)}
+        onClick={(e) => handleAccordionClick(e, () => setOpenSpecs((v) => !v))}
         aria-expanded={openSpecs}
       >
         <h2 className="text-lg font-semibold">2 Column Specs</h2>
@@ -80,7 +85,7 @@ function AccordionRows() {
       <button
         type="button"
         className="w-full flex items-center justify-between py-2"
-        onClick={() => setOpenBreakpoints((v) => !v)}
+        onClick={(e) => handleAccordionClick(e, () => setOpenBreakpoints((v) => !v))}
         aria-expanded={openBreakpoints}
       >
         <h2 className="text-lg font-semibold">2 Column Breakpoints</h2>

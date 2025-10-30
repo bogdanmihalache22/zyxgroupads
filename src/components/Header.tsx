@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Header() {
   const pathname = usePathname();
@@ -17,7 +18,16 @@ export default function Header() {
       <header className="w-screen relative left-1/2 -translate-x-1/2 pt-6 bg-white z-50">
         <nav className="flex items-center justify-between px-8">
           <div className="flex items-center space-x-2">
-            <span className="text-xl font-bold">ZYX Group Ads</span>
+            <Link href="/" aria-label="Go to home">
+              <Image
+                src="/zyx_ID_RGB_black 2.jpg"
+                alt="ZYX Publishing Group"
+                width={260}
+                height={80}
+                className="h-16 w-auto"
+                priority
+              />
+            </Link>
           </div>
           <div className="flex items-center gap-8">
             {links.map(link => {
@@ -26,7 +36,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-sm font-medium transition-colors px-3 py-1 rounded-md 
+                  className={`text-sm font-bold transition-colors px-3 py-1 rounded-md 
                     ${isActive ? "bg-yellow-400 text-white" : "hover:text-primary"}`}
                 >
                   {link.label}
